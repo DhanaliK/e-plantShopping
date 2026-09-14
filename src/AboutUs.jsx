@@ -1,30 +1,51 @@
-import React from 'react';
-import './AboutUs.css';
+import React from "react";
+import { Link } from "react-router-dom";
 
 function AboutUs() {
   return (
-    <div className="about-us-container">
-      {/* <h1 className="about-us-heading">About Us</h1> */}
-      <p className="about-us-description">Welcome to Paradise Nursery, where green meets serenity!</p>
-      <p className="about-us-content">
-        At Paradise Nursery, we are passionate about bringing nature closer to you. Our mission is to provide a wide range of 
-        high-quality plants that not only enhance the beauty of your surroundings but also contribute to a healthier and 
-        more sustainable lifestyle. From air-purifying plants to aromatic fragrant ones, we have something for every 
-        plant enthusiast.
-      </p>
-      {/* <p className="plant_logo_left"><img src="https://p1.hiclipart.com/preview/922/979/640/green-leaf-logo-emoji-seedling-emoticon-sticker-plant-plant-stem-flower-png-clipart-thumbnail.jpg" height='50px' width='50px' alt="" /></p> */}
-      <p className="about-us-content">
-        Our team of experts is dedicated to ensuring that each plant meets our strict standards of quality and care. 
-        Whether you're a seasoned gardener or just starting your green journey, we're here to support you every step of 
-        the way. Feel free to explore our collection, ask questions, and let us help you find the perfect plant for your 
-        home or office.
-      </p>
-      {/* <p className="plant_logo_right"><img src="https://p1.hiclipart.com/preview/922/979/640/green-leaf-logo-emoji-seedling-emoticon-sticker-plant-plant-stem-flower-png-clipart-thumbnail.jpg" height='50px' width='50px' alt="" /></p> */}
+    <div className="about-page">
+      <div className="about-container">
+        <h1>About Paradise Nursery</h1>
 
-      <p className="about-us-content">
-        Join us in our mission to create a greener, healthier world. Visit Paradise Nursery today and experience the 
-        beauty of nature right at your doorstep.
-      </p>
+        <p>
+          Welcome to Paradise Nursery, your one-stop destination for
+          beautiful and healthy plants.
+        </p>
+
+        <p>
+          We offer a wide variety of indoor, outdoor, and flowering plants
+          that can bring freshness and natural beauty into your home and garden.
+        </p>
+
+        <p>
+          Our goal is to make plant shopping simple, convenient, and enjoyable.
+          Whether you are a beginner or an experienced plant lover, we have
+          something for everyone.
+        </p>
+
+        <h2>Why Choose Us?</h2>
+
+        <div className="about-features">
+          <div>
+            <h3>🌱 Healthy Plants</h3>
+            <p>We provide carefully selected and healthy plants.</p>
+          </div>
+
+          <div>
+            <h3>🚚 Easy Shopping</h3>
+            <p>Browse our collection and add your favorite plants to your cart.</p>
+          </div>
+
+          <div>
+            <h3>🌿 Wide Variety</h3>
+            <p>Choose from indoor, outdoor, and flowering plants.</p>
+          </div>
+        </div>
+
+        <Link to="/plants" className="continue-button">
+          Explore Plants
+        </Link>
+      </div>
     </div>
   );
 }
